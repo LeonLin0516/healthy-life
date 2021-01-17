@@ -1,0 +1,15 @@
+# mySQL
+spring:
+  datasource:
+    # mySQL setting
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/easyproject?useUnicode=true&characterEncoding=UTF-&&useSSL=false&serverTimezone=UTC
+    username: root
+    passcode: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-alias-package: com.example.demo.model
+
+server:
+  port: 9000
