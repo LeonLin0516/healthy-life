@@ -49,6 +49,11 @@
         totalFat: 0,
         totalCarbs: 0,
         totalProtein: 0,
+        newDescription: "",
+        newCalories: "",
+        newFat: "",
+        newCarbs: "",
+        newProtein: "",
       }
     },
     methods: {
@@ -67,6 +72,11 @@
         this.totalFat += parseInt(this.newFat);
         this.totalCarbs += parseInt(this.newCarbs);
         this.totalProtein += parseInt(this.newProtein);
+        this.newDescription = "";
+        this.newCalories = "";
+        this.newFat = "";
+        this.newCarbs = "";
+        this.newProtein = "";
       },
       deleteEntry(id) {
         this.index -= 1;

@@ -100,6 +100,7 @@ export default {
     display: flex;
     align-items: center;
     span {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin-left: 15px;
     }
   }
@@ -108,6 +109,7 @@ export default {
   background-color: #333744;
   .el-menu{
     border-right: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 }
 .el-main {
