@@ -10,13 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
 
-    @Autowired
-    UserDao userDao;
-
     @RequestMapping("/login")
     public String login(@RequestBody User user) {
-        User u = userDao.getUserByMessage(user.getUsername(), user.getPassword());
-        System.out.println("user:" + u);
+        System.out.println("user:" + user);
         return "correct";
     }
 }
